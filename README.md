@@ -16,7 +16,7 @@ For tutorials and API description, see our [documentation](https://boevalab.gith
 We aim for Python versions 3.8+. Run:
 
 ```
-pip install git+https://github.com/lciernik/ANS_signature_scoring.git
+pip install git+https://github.com/BoevaLab/ANS_signature_scoring.git
 ```
 
 *Disclaimer*: The implementations of all Tirosh et al. 2016 based scoring methods are largely based on the implementation of the [`score_genes`](https://scanpy.readthedocs.io/en/latest/generated/scanpy.tl.score_genes.html) method in [Scanpy](https://scanpy.readthedocs.io).
