@@ -4,7 +4,9 @@
 A gene expression signature scoring Python package.  
 
 This repository accompanies the work: Laure Ciernik*, Agnieszka Kraft*, Joséphine Yates, Florian Barkmann, and 
-Valentina Boeva, “ANS: Adjusted Neighborhood Scoring to improve gene signature-based cell annotation in single-cell RNA-seq data”. doi: [https://doi.org/10.1101/2023.09.20.558114](https://doi.org/10.1101/2023.09.20.558114)
+Valentina Boeva, “ANS: Adjusted Neighborhood Scoring to improve gene signature-based cell annotation in single-cell RNA-seq data”. Genome Research doi: 10.1101/gr.280926.125
+
+*\*Equal contribution*
 
 *Note: This repository is in the experimental stage. Changes to the API may appear.*
 
