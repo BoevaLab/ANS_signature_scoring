@@ -1,10 +1,10 @@
 [![docs-deploy](https://github.com/BoevaLab/ANS_signature_scoring/actions/workflows/docs-deploy.yml/badge.svg)](https://github.com/BoevaLab/ANS_signature_scoring/blob/main/.github/workflows/docs-deploy.yml)
 
-# ANS: Adjusted Neighborhood Scoring to improve gene signature-based cell annotation in single-cell RNA-seq data
+# Adjusted Neighborhood Scoring to improve gene signature-based cell annotation in single-cell RNA-seq data
 A gene expression signature scoring Python package.  
 
 This repository accompanies the work: Laure Ciernik*, Agnieszka Kraft*, Joséphine Yates, Florian Barkmann, and 
-Valentina Boeva, “ANS: Adjusted Neighborhood Scoring to improve gene signature-based cell annotation in single-cell RNA-seq data”.  
+Valentina Boeva, “Robust and efficient annotation of cell states through gene signature scoring”.  
 Genome Research doi: 10.1101/gr.280926.125
 
 *\*Equal contribution*
@@ -56,10 +56,9 @@ Other `method` values:
 - `jasmine_scoring`: Python implementation of [JASMINE](https://github.com/NNoureen/JASMINE) by [Noureen et al. 2022](https://doi.org/10.7554/eLife.71994). Requires an additional argument `score_method` with the values `likelihood` or `oddsratio`. 
 - `ucell_scoring`: Python implementation of [UCell](https://github.com/carmonalab/UCell) by [Andreatta et Carmona 2021](https://doi.org/10.1016/j.csbj.2021.06.043). 
 
-See tutorials on basic scoring examples,  GMM postprocessing, and hard labeling in the `tutorials` folder. 
 
 ## Correspondance 
-First: [Laure Ciernik](mailto:laure.ciernik@gmail.com)
+First: [Laure Ciernik](mailto:laure.ciernik@gmail.com) or [Agnieszka Kraft](mailto:AKraft@cemm.oeaw.ac.at)
 Second: [Prof. Valentina Boeva](mailto:valentina.boeva@inf.ethz.ch)
 
 
