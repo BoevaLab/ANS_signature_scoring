@@ -5,11 +5,11 @@
 
 ANS: Adjusted Neighborhood Scoring
 ==================================
-In the field of single-cell RNA sequencing (scRNA-seq), gene signature scoring is integral for pinpointing and characterizing distinct cell populations. However, challenges arise in ensuring the robustness and comparability of scores across various gene signatures and across different batches and conditions. Addressing these challenges, we evaluated the stability of established methods such as Scanpy, UCell, and JASMINE in the context of scoring cells of different types and states. Additionally, we introduced a new scoring method, the Adjusted Neighbourhood Scoring (ANS), that builds on the traditional Scanpy method and improves the handling of the control gene sets. We further exemplified the usability of ANS scoring in differentiating between cancer-associated fibroblasts and malignant cells undergoing epithelial-mesenchymal transition (EMT) in four cancer types and evidenced excellent classification performance (AUCPR train: 0.95-0.99, AUCPR test: 0.91-0.99). In summary, our research introduces the ANS as a robust and deterministic scoring approach that enables the comparison of diverse gene signatures. The results of our study contribute to the development of more accurate and reliable methods for analyzing scRNA-seq data.
+Gene signature scoring is integral to single-cell RNA sequencing (scRNA-seq) data analysis, particularly for unsupervised cellular state annotation based on maximum signature score values. However, this application requires robust and comparable score distributions across diverse signatures and experimental conditions. Our systematic evaluation of established scoring methodologies—Seurat, SCANPY, UCell, and JASMINE—across nine healthy and cancer scRNA-seq datasets demonstrates their insufficiency in fulfilling this requirement. To address this limitation, we present Adjusted Neighborhood Scoring (ANS), a deterministic algorithm with enhanced control gene selection that significantly improves score stability and cross-signature comparability, achieving cell state annotation accuracy comparable to supervised methods. We demonstrate the practical utility of ANS by developing and validating a gene signature to differentiate cancer-associated fibroblasts from malignant cells undergoing epithelial-to-mesenchymal transition. Overall, ANS provides a robust and reliable gene signature scoring framework, significantly improving the accuracy of score-based annotation of cell types and states in single-cell studies.
 
 .. image:: img/website_figure.png
   :width: 700
-  :alt: Performance comparison ANS and other scRNA-seq scoring methods on celltype annotation.
+  :alt: Performance comparison of ANS and other scRNA-seq scoring methods on cell-type annotation.
   :align: center
 
 .. note::
@@ -37,7 +37,7 @@ We aim for Python versions 3.8+. Run:
 
 .. code-block:: bash
 
-   pip install git+https://github.com/lciernik/ANS_signature_scoring.git
+   pip install git+https://github.com/BoevaLab/ANS_signature_scoring.git
 
 *Disclaimer*: The implementations of all Tirosh et al. 2016 based scoring methods are largely based on the implementation of the :func:`score_genes` method in `Scanpy <https://scanpy.readthedocs.io>`_.
 
